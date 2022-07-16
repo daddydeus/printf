@@ -5,7 +5,7 @@
  * @num: arguments.
  * Return: counter.
  */
-int printf_Hex_aux(unsigned long int NUM)
+int printf_Hex_aux(unsigned int NUM)
 {
 	long int I;
 	long int *ARRAY;
