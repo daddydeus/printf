@@ -27,7 +27,7 @@ int printf_exclusive_string(va_list val)
 				_putchar('0');
 				len++;
 			}
-			len = len + printf_HEX_aux(cast);
+			len = len + printf_Hex_aux(cast);
 		}
 		else
 		{
