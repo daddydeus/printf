@@ -24,7 +24,7 @@ typedef struct format
 
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
-int printf_Hex_aux(unsigned int num);
+int printf_Hex_aux(unsigned int NUM);
 int printf_exclusive_string(va_list val);
 int printf_Hex(va_list val);
 int printf_hex(va_list val);
