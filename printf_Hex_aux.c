@@ -5,32 +5,32 @@
  * @num: arguments.
  * Return: counter.
  */
-int printf_Hex_aux(unsigned long int num)
+int printf_Hex_aux(unsigned long int NUM)
 {
-	long int i;
-	long int *array;
-	long int counter = 0;
-	unsigned long int temp = num;
+	long int I;
+	long int *ARRAY;
+	long int COUNTER = 0;
+	unsigned long int TEMP = NUM;
 
-	while (num / 16 != 0)
+	while (NUM / 16 != 0)
 	{
-		num /= 16;
-		counter++;
+		NUM /= 16;
+		COUNTER++;
 	}
-	counter++;
-	array = malloc(counter * sizeof(long int));
+	COUNTER++;
+	ARRAY = malloc(COUNTER * sizeof(long int));
 
-	for (i = 0; i < counter; i++)
+	for (I = 0; I < COUNTER; I++)
 	{
-		array[i] = temp % 16;
-		temp /= 16;
+		ARRAY[I] = TEMP % 16;
+		TEMP /= 16;
 	}
-	for (i = counter - 1; i >= 0; i--)
+	for (I = COUNTER - 1; I >= 0; I--)
 	{
-		if (array[i] > 9)
-			array[i] = array[i] + 39;
-		_putchar(array[i] + '0');
+		if (ARRAY[I] > 9)
+			ARRAY[I] = ARRAY[I] + 39;
+		_putchar(ARRAY[I] + '0');
 	}
-	free(array);
-	return (counter);
+	free(ARRAY);
+	return (COUNTER);
 }
